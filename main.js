@@ -15,7 +15,7 @@
   }
 
   // 予期するURLでなければ早期返却
-  if (!window.location.href.match(/meet.google.com\/\w+-\w+-\w+\/?$/g)) {
+  if (!window.location.href.match(/meet.google.com\/\w+-\w+-\w+\/?(\?[&=\w]*)*$/g)) {
     return;
   }
 
